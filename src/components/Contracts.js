@@ -112,6 +112,10 @@ const ContactsWrapper = styled.section`
       border-radius: 2rem;
       background-color: white;
       box-shadow: 0 1rem 1.5rem ${rgba("black", 0.5)};
+      
+      :focus {
+        outline: none;
+      }
     }
 
     .controls {
