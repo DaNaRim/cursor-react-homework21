@@ -112,7 +112,7 @@ const ContactsWrapper = styled.section`
       border-radius: 2rem;
       background-color: white;
       box-shadow: 0 1rem 1.5rem ${rgba("black", 0.5)};
-      
+
       &:focus {
         outline: none;
       }
@@ -142,11 +142,12 @@ const ContactsWrapper = styled.section`
           display: none;
 
           &:checked + label {
-            background-color: aqua;
+            background-color: rgba(255, 158, 170, 0.5);
           }
         }
 
         label {
+          font-family: Montserrat, sans-serif;
           font-size: 1.2rem;
           margin-right: 0.5rem;
           padding: 0.1rem 0.5rem;
