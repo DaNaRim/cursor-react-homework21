@@ -113,7 +113,7 @@ const ContactsWrapper = styled.section`
       background-color: white;
       box-shadow: 0 1rem 1.5rem ${rgba("black", 0.5)};
       
-      :focus {
+      &:focus {
         outline: none;
       }
     }
