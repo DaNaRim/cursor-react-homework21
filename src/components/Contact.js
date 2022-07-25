@@ -1,5 +1,10 @@
+import {library as fontawesome} from "@fortawesome/fontawesome-svg-core"
+import {faMars, faVenus} from "@fortawesome/free-solid-svg-icons"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {rgba} from "polished"
 import styled from "styled-components"
+
+fontawesome.add(faMars, faVenus)
 
 const Contact = ({data}) => {
   const {firstName, lastName, phone, gender} = data
@@ -7,7 +12,7 @@ const Contact = ({data}) => {
   return <ContactWrapper className="contact">
     <header>
       <h3 className="name">{firstName} {lastName}</h3>
-      {gender ? <p className="gender">gender: {gender}</p> : null}
+      {getIconByGender(gender)}
     </header>
     <article className="contacts">
       <p className="phone">
@@ -21,6 +26,14 @@ export default Contact
 
 function formatPhoneNumber(phone) {
   return phone.replace(/(\d{3})(\d{2})(\d{3})(\d{4})/, "$1 $2 $3 $4")
+}
+
+function getIconByGender(gender) {
+  switch (gender) {
+    case "male": return <FontAwesomeIcon className="gender" icon="fa-solid fa-mars"/>
+    case "female": return <FontAwesomeIcon className="gender" icon="fa-solid fa-venus"/>
+    default: return null
+  }
 }
 
 const ContactWrapper = styled.div`
@@ -51,8 +64,8 @@ const ContactWrapper = styled.div`
     }
 
     .gender {
-      font-size: 0.95rem;
-      margin-top: 0.7rem;
+      font-size: 1.5rem;
+      margin-top: 0.6rem;
       color: #a0a0a0;
     }
   }
