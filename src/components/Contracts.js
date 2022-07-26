@@ -202,10 +202,17 @@ const ContactsWrapper = styled.section`
           right: 100%;
           width: fit-content;
 
+          input:checked + label {
+            color: #000;
+            background-color: #fff;
+          }
+
           label {
             font-size: 1.5rem;
             margin-right: 1rem;
             padding: 0.2rem 1rem 0.6rem;
+            color: #fff;
+            background-color: rgba(255, 158, 170, 0.5);
 
             &:last-child {
               margin-right: 1rem;
