@@ -106,7 +106,7 @@ const ContactsWrapper = styled.section`
       box-sizing: border-box;
       width: 100%;
       height: 3rem;
-      padding: 0 19rem 0 2rem;
+      padding: 0 16rem 0 2rem;
       color: #404040;
       border: none;
       border-radius: 2rem;
@@ -188,7 +188,7 @@ const ContactsWrapper = styled.section`
       margin-bottom: 8rem;
 
       input {
-        padding-right: 1.5rem;
+        padding-right: 3rem;
       }
 
       .controls {
