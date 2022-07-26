@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cursor-react-homework21/static/css/main.073c9b0a.css",
-    "main.js": "/cursor-react-homework21/static/js/main.5de58309.js",
+    "main.js": "/cursor-react-homework21/static/js/main.0864c0cb.js",
     "static/js/787.c294cc0d.chunk.js": "/cursor-react-homework21/static/js/787.c294cc0d.chunk.js",
     "index.html": "/cursor-react-homework21/index.html",
     "main.073c9b0a.css.map": "/cursor-react-homework21/static/css/main.073c9b0a.css.map",
-    "main.5de58309.js.map": "/cursor-react-homework21/static/js/main.5de58309.js.map",
+    "main.0864c0cb.js.map": "/cursor-react-homework21/static/js/main.0864c0cb.js.map",
     "787.c294cc0d.chunk.js.map": "/cursor-react-homework21/static/js/787.c294cc0d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.5de58309.js"
+    "static/js/main.0864c0cb.js"
   ]
 }
